@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kódovna s.r.o.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/303912b032.js" crossorigin="anonymous"></script>
+
+     <!-- Popis pro SEO -->
+     <meta name="description" content="Kódovna s.r.o. se specializuje na vývoj softwaru, webových aplikací a digitálních řešení s důrazem na moderní technologie, minimalismus a efektivitu.">
+    
+     <!-- Klíčová slova pro SEO -->
+     <meta name="keywords" content="Kódovna, vývoj softwaru, webové aplikace, digitální řešení, technologie, minimalismus, moderní design, inovace, česká technologická firma">
+     
+     <!-- Autor -->
+     <meta name="author" content="Kódovna s.r.o.">
+ 
+     <!-- Open Graph pro sociální sítě (Facebook, LinkedIn) -->
+     <meta property="og:title" content="Kódovna s.r.o. - Vývoj softwaru a webových aplikací">
+     <meta property="og:description" content="Přinášíme inovativní digitální řešení a software na míru. Společnost Kódovna s.r.o. spojuje kreativitu a technologie pro vaši budoucnost.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://www.vaclavpi.github.io/kodovna">
+     <meta property="og:image" content="https://www.vaclavpi.github.io/kodovna/assets/kodovna_logo.png"> <!-- Odkaz na obrázek pro sdílení -->
+    
+ 
+     <!-- Favicon -->
+     <link rel="icon" href="assets/kodovna_logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Vyjížděcí navigační panel -->
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Služby</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Horní navigace -->
+    <div id="top-nav" class="top-nav">
+        <div class="logo-top-nav">
+            <img src="assets/kodovna_logo.png" alt="Logo Kódovna" />
+        </div>
+        <div class="burger" onclick="toggleNavbar()">
+            &#9776;
+        </div>
+    </div>
+
+    <!-- Hero sekce -->
+    <header>
+        <div class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>KÓDOVNA S.R.O.</h1>
+                <p>Spojení technologie a kreativity</p>
+                <br><br><br><br>
+                <a href="#about" class="cta-button">Zjistit více</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>O Nás</h2>
+            <p>
+                <span style="color: #8fd3d2;">Jsme Kódovna s.r.o. –</span> místo, kde se technologie prolínají s kreativitou. 
+                Naše vášeň pro inovace a dokonalý kód vytváří software, který 
+                nejen splňuje vaše očekávání, ale překonává je. S námi vstoupujete do světa, kde se 
+                hranice technologických možností neustále posouvají. 
+            </p>
+            <br>
+            <p>
+                <span style="color: #8fd3d2;">Od nápadu k realizaci.</span> 
+                Spolupracujeme s vámi na každém kroku, abychom přinesli řešení, která se dokonale přizpůsobí vašim potřebám.
+            </p></section>
+            <br>  <br>  
+        
+        <section id="portfolio">
+            <h2>Naše projekty</h2>
+            <p>
+                Náš software vás vtáhne do nového světa! Od vývoje her, které vás uchvátí, 
+                až po webové aplikace, které zefektivní váš byznys – tvoříme budoucnost.
+            </p>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" onclick="openProject('project1')">
+                    <img src="assets/1.jpg" alt="Herní Projekt 1" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <h3>Herní Projekt 1</h3>
+                        <p>Ponořte se do epických dobrodružství. Náš herní engine zaručuje hodiny zábavy v realistických světech.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card" onclick="openProject('project2')">
+                    <img src="assets/1.jpg" alt="Webová Aplikace 2" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <h3>Webová Aplikace 2</h3>
+                        <p>Revoluční aplikace, která promění způsob, jakým řídíte své podnikání. Přehledné, rychlé, efektivní.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card" onclick="openProject('project3')">
+                    <img src="assets/1.jpg" alt="Mobilní Aplikace 3" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <h3>Mobilní Aplikace 3</h3>
+                        <p>Navrženo pro maximální pohodlí – vaše firma vždy po ruce, kdykoliv a kdekoliv.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+        
+
+        <section id="services">
+            <h2>Služby</h2>
+            <ul>
+                <li><strong>Vývoj softwaru:</strong> Naše nabídky Vám otevřou dveře do světa technologií, kde nic není nemožné.</li>
+                <li><strong>Webové aplikace:</strong> Inovativní aplikace, které přinášejí rychlost, přehlednost a uživatelský zážitek na špičkové úrovni.</li>
+            <li><strong>Mobilní aplikace:</strong> Vaše nápady v pohybu – mobilní řešení, která překonají očekávání vašich zákazníků.</li>
+        
+            </ul>
+        </section>
+
+        <br><br>
+        
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Máte nápad? Potřebujete konzultaci? Kontaktujte nás – jsme tady pro vás!</p>
+            <p>Email: vpi@outlook.cz<br>Telefon: +420 603 981 192</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kódovna s.r.o. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script>
+        // Otevírání a zavírání vyjížděcího panelu
+        function toggleNavbar() {
+            var navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active');
+        }
+
+        // Funkce pro otevření detailu projektu
+        function openProject(project) {
+            alert('Otevřen projekt: ' + project);
+        }
+
+        // Změna navigace při scrollování
+        window.onscroll = function() {
+            var topNav = document.getElementById("top-nav");
+            if (window.scrollY > 100) {
+                topNav.classList.add("scrolled");
+            } else {
+                topNav.classList.remove("scrolled");
+            }
+        };
+    </script>
+</body>
+</html>
